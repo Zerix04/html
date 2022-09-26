@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Belajar Event mouse - javascript</title>
+</head>
+
+<body>
+
+    <button id="btn-enter">mouse enter</button>
+    <button id="btn-over"> mouse over</button>
+    <button id="btn-out">mouse out</button>
+
+    <script>
+        var btnenter = document.getElementById('btn-enter');
+        var btnover = document.getElementById('btn-over');
+        var btnout = document.getElementById('btn-out');
+
+        btnenter.addEventListener('mouseenter', function () {
+            btnenter.innerText = "mouse sudah masuk";
+        })
+
+        btnover.addEventListener('mouseover', function () {
+            btnover.innerText = "mouse sudah di atas";
+        })
+
+        btnout.addEventListener('mouseout', function () {
+            btnout.innerText = "mouse sudah keluar";
+        })
+
+
+    </script>
+
+</body>
+
+</html>

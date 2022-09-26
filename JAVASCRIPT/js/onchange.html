@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>belajar_js1</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(24, 24, 24);
+        }
+
+        h2 {
+            color: aqua;
+        }
+
+        h6 {
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row  ">
+            <div class="col-3"></div>
+            <div class="col-6 bg-light rounded">
+                <div class="m my-5">
+                    <h2 class="m p-2 ms-4">
+                        <p>PROGRAM Mencari Grade Nilai</p>
+                    </h2>
+                    <hr>
+                    <p>
+                        <!-- <h6>silah kan pilih jenis barang yang akan anda beli,dan anda akan mengetahui berapa harganya -->
+                        </h6>
+                    </p>
+                    <br><br>
+                    <div class="col">
+                        <label class="from-label"><b>Input Nilai</b></label>
+                        <select class="form-select" id="tujuan">
+                            <option value="1">90</option>
+                            <option value="2">80</option>
+                            <option value="3">75</option>
+                            <option value="3">70</option>
+                        </select>
+                    </div>
+                    <!-- <div class="col-md-12 p-2">
+                        <label class="form-label"><b>Discount</b></label>
+                        <input type="text" class="form-control" value="10%" readonly>
+                    </div> -->
+
+                    <div class="col-md-12 p-2">
+                        <label class="form-label"></label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var barang = document.getElementById('tujuan');
+        var hj = document.getElementById('harga');
+        var persent = .10;
+
+        barang.addEventListener('change', function () {
+            if (barang.value == '1') {
+                var harga = 'A';
+                // var disc = harga * .10;
+                var hasil = harga - disc;
+                hj.value = hasil;
+            }
+
+            else if (barang.value == '2') {
+                var harga = 'B';
+
+                var hasil = harga - disc;
+                hj.value = hasil;
+            }
+
+            else if (barang.value == '3') {
+                var harga = 'C';
+                // var disc = harga * .10;
+                var hasil = harga - disc;
+                hj.value = hasil;
+            }
+        })
+
+    </script>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>

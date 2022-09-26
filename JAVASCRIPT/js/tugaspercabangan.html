@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+        let a = 90;
+        let b = 80;
+        let c = 75;
+        let d = 70;
+
+        if (a > 90) {
+            document.write("A");
+        }
+
+        else if (b > 80) {
+            document.write("B");
+        }
+
+        else if (c > 75) {
+            document.write("C");
+        }
+
+        else (d < 75) {
+            document.write("D");
+        }
+    </script> -->
+
+    <script>
+
+        function grade() {
+            var nilai = document.getElementById("nilai").value;
+            var hasil = document.getElementById("hasil");
+
+            if (nilai >= 1010 && nilai <= 1000) {
+                hasil.innerHTML = "tidak ada nilai seperti itu";
+            }
+
+            else if (nilai >= 90) {
+                hasil.innerHTML = "A"
+            }
+
+            else if (nilai >= 80) {
+                hasil.innerHTML = "B";
+            }
+
+            else if (nilai >= 75) {
+                hasil.innerHTML = "C";
+            }
+
+            else if (nilai = 75) {
+                hasil.innerHTML = "D"
+            }
+
+            else if (nilai <= 65) {
+                hasil.innerHTML = "Belajar lagi"
+            }
+
+        }
+
+
+    </script>
+
+    <h1>PROGRAM MENCARI GRADE NILAI </h1>
+
+
+    <hr>
+
+
+    <br><br>
+
+    <div class="container">
+        <h3>Input Nilai</h3>
+        <input type="text" id="nilai">
+        <br><br>
+        <button onclick="grade()">cek</button>
+        <br><br>
+        <div class="hasil" id="hasil"></div>
+    </div>
+
+    </script>
+
+
+    <!-- <h1>PROGRAM MENCARI GRADE NILAI</h1> -->
+    <!-- 
+    <h4>Input Nilai</h4>
+
+    <input type="">
+    <br><br>
+
+    <button style="background-color: aqua;">Cek</button> -->
+
+</body>
+
+</html>

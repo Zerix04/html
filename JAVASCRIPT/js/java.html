@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-light">
+
+                    <h1 style="color: aqua;">PROGRAM PENJUALAN KOMPUTER</h1>
+                    <hr>
+                    silahkan pilih jenis barang yang akan dibeli,dan anda akan mengetahui berapa harganya
+
+                    <br><br>
+
+                    Barang
+                    <br><br>
+                    <select name="barang" id="barang">
+                        <option value="">-Pilih Barang -</option>
+                        <option value="pekanbaru">Laptop</option>
+                        <option value="keyboard">Keyboard</option>
+                        <option value="mouse">Mouse</option>
+                    </select>
+
+                    <script>
+                        var brg = document.getElementById('barang');
+                        var hg = document.getElementById('harga');
+
+                        tj.addEventListener('change', function () {
+
+                            if (tj.value == 'pekanbaru') {
+                                hg.value = '70000';
+                            }
+
+                            else if (tj.value == 'medan') {
+                                hg.value = '200000';
+                            }
+
+                            else if (tj.value == 'padang') {
+                                hg.value = '150000';
+                            }
+                        })
+
+
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

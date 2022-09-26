@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>
+        tugas for
+    </title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button onclick="ggwp()">Lihat</button>
+    <!-- <input type="submit" name="enter" value="Lihat"> -->
+
+
+    <script>
+        function ggwp() {
+            var input = document.getElementById("input").value;
+
+            for (var sd = 1; sd <= input; sd++) {
+                for (var i = 1; i <= sd; i++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

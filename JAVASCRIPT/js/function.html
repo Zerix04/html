@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Belajar function</title>
+</head>
+
+<body>
+
+
+    <!-- <script.>
+        function luas_persegi_panjang(p, l) {
+        alert("selamat datang");
+
+        luas = p * l;
+        return luas;
+        // var nama = "zerix";
+        // document.write(nama);
+
+        // var umur = "16";
+        // document.write(umur);
+
+
+        }
+        document.write(luas_persegi_panjang(10, 20));
+
+        var nilai_p = 20;
+        var nilai_l = 10;
+        var hasil = luas_persegi_panjang(nilai_p, nilai_l); -->
+
+
+
+
+    <!-- </script> -->
+    <!-- <button onclick="tes('zerix')">klik</button>  -->
+
+    <script>
+        function luaspp() {
+
+            var p = document.getElementById("nilai_p");
+            var l = document.getElementById("nilai_l");
+            var hasil = document.getElementById("hasil");
+
+            var luas = p.value * l.value;
+
+            hasil.value = luas;
+
+            console.log(p.value);
+
+            var rumus = p.value * l.value;
+
+            document.getElementById(hasil2);
+
+            hasil2.innerText = rumus;
+
+
+        }
+    </script>
+
+    <h1>PROGRAM SEDERHANA </h1>
+
+    <h3>MENGHITUNG LUAS PERSEGI PANJANG</h3>
+    <hr>
+
+    <h3>nilai panjang</h3>
+    <input type="number" id="nilai_p">
+
+    <br><br>
+
+    <h3>nilai lebar</h3>
+    <input type="number" id="nilai_l">
+
+    <br><br>
+
+    <h3>hasil</h3>
+    <input type="number" id="hasil">
+
+    <br><br>
+
+    <div id="hasil2"></div>
+
+    <br><br>
+
+    <button onclick="luaspp()">hasil</button>
+
+
+
+</body>
+
+</html>
